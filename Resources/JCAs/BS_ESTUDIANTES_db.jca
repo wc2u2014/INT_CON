@@ -1,0 +1,13 @@
+<adapter-config name="BS_ESTUDIANTES" adapter="db" wsdlLocation="../WSDLs/BS_ESTUDIANTES.wsdl" xmlns="http://platform.integration.oracle/blocks/adapter/fw/metadata">
+  
+  <connection-factory UIConnectionName="system" location="eis/DB/system"/>
+  <endpoint-interaction portType="BS_ESTUDIANTES_ptt" operation="BS_ESTUDIANTES">
+    <interaction-spec className="oracle.tip.adapter.db.DBStoredProcedureInteractionSpec">
+      <property name="SchemaName" value="SYSTEM"/>
+      <property name="PackageName" value="PAQUETE_INSERCION_ESTUDIATNTE"/>
+      <property name="ProcedureName" value="ESTUDIANTE"/>
+      <property name="GetActiveUnitOfWork" value="false"/>
+    </interaction-spec>
+  </endpoint-interaction>
+
+</adapter-config>

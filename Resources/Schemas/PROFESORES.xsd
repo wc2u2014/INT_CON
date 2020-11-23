@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.example.org/PROFESORES"
+            targetNamespace="http://www.example.org/PROFESORES" elementFormDefault="qualified">
+  <xsd:element name="PROFESORES_REQUEST">
+    <xsd:annotation>
+      <xsd:documentation>A sample element</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="DOCUMENTO" type="xsd:string"/>
+        <xsd:element name="NOMBRE"  type="xsd:string"/>
+        <xsd:element name="APELLIDO"  type="xsd:string"/>
+        <xsd:element name="TELEFONO"  type="xsd:string"/>
+        <xsd:element name="CORREO"  type="xsd:string"/>
+        <xsd:element name="PROFESION"  type="xsd:string"/>
+        <xsd:element name="FECHA_INGRESO" type="xsd:string"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="PROFESORES_RESPONSE">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="CODIGO" type="xsd:string"/>
+        <xsd:element name="DESCRIPCION" type="xsd:string"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>

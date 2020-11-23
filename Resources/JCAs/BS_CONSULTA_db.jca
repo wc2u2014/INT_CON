@@ -1,0 +1,12 @@
+<adapter-config name="BS_CONSULTA" adapter="db" wsdlLocation="../WSDLs/BS_CONSULTA.wsdl" xmlns="http://platform.integration.oracle/blocks/adapter/fw/metadata">
+  
+  <connection-factory UIConnectionName="system" location="eis/DB/system"/>
+  <endpoint-interaction portType="BS_CONSULTA_ptt" operation="BS_CONSULTA">
+    <interaction-spec className="oracle.tip.adapter.db.DBStoredProcedureInteractionSpec">
+      <property name="SchemaName" value="SYSTEM"/>
+      <property name="ProcedureName" value="PRC_CONSULTA"/>
+      <property name="GetActiveUnitOfWork" value="false"/>
+    </interaction-spec>
+  </endpoint-interaction>
+
+</adapter-config>

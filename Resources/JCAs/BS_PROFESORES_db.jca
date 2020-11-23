@@ -1,0 +1,13 @@
+<adapter-config name="BS_PROFESORES" adapter="db" wsdlLocation="../WSDLs/BS_PROFESORES.wsdl" xmlns="http://platform.integration.oracle/blocks/adapter/fw/metadata">
+  
+  <connection-factory UIConnectionName="system" location="eis/DB/system"/>
+  <endpoint-interaction portType="BS_PROFESORES_ptt" operation="BS_PROFESORES">
+    <interaction-spec className="oracle.tip.adapter.db.DBStoredProcedureInteractionSpec">
+      <property name="SchemaName" value="SYSTEM"/>
+      <property name="PackageName" value="PAQUETE_INSERCION_PROFESOR"/>
+      <property name="ProcedureName" value="PROFESOR"/>
+      <property name="GetActiveUnitOfWork" value="false"/>
+    </interaction-spec>
+  </endpoint-interaction>
+
+</adapter-config>

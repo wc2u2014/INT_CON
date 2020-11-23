@@ -1,0 +1,15 @@
+<wsdl:definitions targetNamespace="http://xmlns.oracle.com/pcbpel/adapter/db/INTEGRACION_CONT/COLEGIO/BS_ESTUDIANTES" name="BS_ESTUDIANTES-concrete" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+    <wsdl:import location="BS_ESTUDIANTES.wsdl" namespace="http://xmlns.oracle.com/pcbpel/adapter/db/INTEGRACION_CONT/COLEGIO/BS_ESTUDIANTES"/>
+    <wsdl:binding name="BS_ESTUDIANTES_ptt-binding" type="bs:BS_ESTUDIANTES_ptt" xmlns:bs="http://xmlns.oracle.com/pcbpel/adapter/db/INTEGRACION_CONT/COLEGIO/BS_ESTUDIANTES">
+        <soap:binding style="document" transport="http://www.bea.com/wli/sb/transports/jca"/>
+        <wsdl:operation name="BS_ESTUDIANTES">
+            <soap:operation soapAction="BS_ESTUDIANTES"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+</wsdl:definitions>
